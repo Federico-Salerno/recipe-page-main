@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);    
+    
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 375px;
+    margin: auto;
+    font-family: 'Outfit';
+    font-weight: 400;
+    color: var(--DarkCharcoal);
+}
+
+img {
+    width: 100%;
+}
+
+.recipe-main {
+    padding: 40px 30px; 
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.instructions,
+.nutrition {
+    margin-top: 15px;
+}
+
+h2,
+.nutrition p {
+    margin-left: -20px;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif';
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--DarkCharcoal);
+}
+
+h2,
+li::marker {
+    color: var(--Nutmeg);
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Outfit';
+    font-weight: 600;
+    color: var(--DarkRaspberry);
+    margin-bottom: 15px;
+}
+
+.preparation-time {
+    padding: 25px 28px;
+    background: var(--RoseWhite);
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.preparation-time li::marker {
+    color: var(--DarkRaspberry);
+    margin-left: -30px;
+}
+.preparation-time  li {
+    margin-left: 30px;
+    text-indent: 12px;
+    margin-bottom: 15px;
+}
+
+.ingredients li,
+.instructions li {
+    margin-bottom: 15px;
+}
+.nutrition p {
+    margin-bottom: 30px;
+}
+
+.list-calories .bold {
+    color: var(--Nutmeg);
+}
+
+.list-calories p {
+    padding-left: 30px;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.calories-num {
+    margin-left: 70px;
+}
+.carbs-num {
+    margin-left: 85px;
+}
+.protein-num {
+    margin-left: 77px;
+}
+.fat-num {
+    margin-left: 105px;
+}
+
+.recipe-details {
+    margin-bottom: 35px;
+}
+
+.divider {
+    border: 1px solid var(--LightGrey);
+}
+
+.attribution { 
+    font-size: .8rem; 
+    text-align: center; 
+    margin-bottom: 10px;
+}    
+a { 
+        color: var(--Nutmeg);
+        text-decoration: none;
+}
+
+a:hover {
+    color: var(--DarkRaspberry);
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        width: 736px;
+        background: var(--Eggshell);
+    }
+
+    main {
+        background-color: var(--White);
+        margin: 120px auto;
+        border-radius: 20px;
+        padding-top: 40px;
+    }
+
+    .recipe-image {
+        width: 676px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .calories-num {
+        margin-left: 255px;
+    }
+    .carbs-num {
+        margin-left: 270px;
+    }
+    .protein-num {
+        margin-left: 262px;
+    }
+    .fat-num {
+        margin-left: 289px;
+    }
+    
+}
